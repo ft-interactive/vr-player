@@ -33,3 +33,43 @@ body {
 .masthead {
   height: 18px;
 }
+
+// Custom
+.o-footer {
+  margin-top: 0;
+}
+
+.vr-container {
+  height: calc(100vh - 159px);
+  overflow: hidden;
+}
+
+@media (max-width: 736px) {
+  .vr-container {
+    height: 100vh;
+    margin-top: -47px;
+  }
+
+  .o-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 736px) and (orientation: landscape) {
+  .vr-container {
+    height: 100vh;
+    margin-top: -45px;
+  }
+
+  .o-header {
+    background-color: transparent;
+  }
+
+  .o-header__nav-link {
+    display: none;
+  }
+
+  .o-header__search-toggle {
+    display: none;
+  }
+}
